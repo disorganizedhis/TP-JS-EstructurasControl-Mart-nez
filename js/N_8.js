@@ -24,7 +24,7 @@ switch (cupon) {
         if (monto > 50000) {
             cuponP = 0.20;
         } else {
-            console.log("El cupon SUPER20 solo aplica para compras mayores a $50.000 ARS.");
+            console.log("El cupon SUPER20 solo aplica para compras mayores a $50.000 pesos.");
         }
         break;
         
@@ -34,26 +34,26 @@ switch (cupon) {
 }
 
 let descuentoMembresia = monto * membresia;
-let descuentoCupon = monto * cuponP;
-let totalDescuentos = descuentoMembresia + descuentoCupon;
+let descuentoCupo = monto * cuponP;
+let descuentos = descuentoMembresia + descuentoCupo;
 
-let subtotalDescuento = monto - totalDescuentos;
+let subtotal = monto - descuentos;
 
 let costoEnvio = 0;
 
-if (subtotalDescuento > 100000) {
+if (subtotal > 100000) {
     costoEnvio = 0;
 } else {
     costoEnvio = 4500;
 }
 
-let totalNeto = subtotalDescuento + costoEnvio;
+let totalNeto = subtotal + costoEnvio;
 
 console.log(" Informacion de la compra");
 console.log(" Monto inicial del carrito : " + monto);
 console.log(" Descuento por membresia (" + categoria + "): " + descuentoMembresia);
 console.log(" Descuento por cupon (" + cupon + "): " + descuentoCupon);
-console.log(" Total de descuentos aplicados : " + totalDescuentos);
+console.log(" Total de descuentos aplicados : " + descuentos);
 console.log(" Costo de envio : " + costoEnvio);
 console.log(" ================================ ");
 console.log(" TOTAL NETO A PAGAR: $" + totalNeto);

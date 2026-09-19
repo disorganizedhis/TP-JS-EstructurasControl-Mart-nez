@@ -1,9 +1,9 @@
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
 
-let respiracion = prompt("¿Tiene dificultad para respirar? (si / no):");
-let dolor = parseInt(prompt("Ingrese el nivel de dolor (1 a 10):"));
-let presion = parseInt(prompt("Ingrese la presion arterial sistolica (mm Hg):"));
+let respiracion = prompt(" Tiene dificultad para respirar? (si / no):");
+let dolor = parseInt(prompt(" Ingrese el nivel de dolor (1 a 10):"));
+let presion = parseInt(prompt(" Ingrese la presion arterial sistolica (mm Hg):"));
 
 if (respiracion === "si" || presion > 180) {
     alert(" TRIAjE ROJO (Atencion Inmediata)\n");
