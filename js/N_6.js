@@ -11,7 +11,6 @@ let cuotaMensual = interes / 12;
 
 let limiteCuota = ingreso * 0.30;
 
-// Evaluacion de condiciones en orden
 if (deudas === "si") {
     alert(" Rechazado: posee deudas pendientes.");
 } else if (antiguedad < 1) {
